@@ -144,12 +144,22 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="mk2slide">mk2slide</h1>
-<p>A simple presentation generator from markdown files.</p>
-<h2 id="usage">Usage:</h2>
-<pre><code class="lang-sh">mk2slide mypresentation.md
+<p>A simple presentation generator from markdown files</p>
+<h2 id="basic-usage">Basic Usage:</h2>
+<p>To create a simple presentation, you need to create a markdown file with at least the following metadata:</p>
+<pre><code class="lang-yaml"><span class="hljs-meta">---</span>
+<span class="hljs-attr">title:</span> A Presentation Example
+<span class="hljs-attr">width:</span> <span class="hljs-number">800</span>px
+<span class="hljs-attr">height:</span> <span class="hljs-number">600</span>px
+<span class="hljs-meta">---</span>
 </code></pre>
-<h2 id="syntax">Syntax</h2>
-<p>Use standard markdown with <code>---</code> to separate slides</p>
+<p>Then just add your content to your presentation, and to break into slides create a line with <code>---</code>.</p>
+<p>To convert your markdown to HTML just the following comand:</p>
+<pre><code class="lang-sh">mk2slide &lt;presentation.md&gt;
+</code></pre>
+<p>A example of a valid slide file is <a href="https://github.com/lucassabreu/mk2slide/blob/master/examples/minimum.md" target="_blank">examples/minimum.md</a>, it will generate this slide: <a href="examples/minimum.html">minimum.html</a>.</p>
+<hr>
+<p>Full documentation: <a href="http://localhost:4000" target="_blank">click here</a></p>
 
                                 
                                 </section>
@@ -185,7 +195,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-11-30T22:49:26.224Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-11-30T23:22:10.283Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-11-30T23:23:11.611Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-11-30T23:27:27.654Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
