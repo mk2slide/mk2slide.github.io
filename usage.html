@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Basics · GitBook</title>
+        <title>Usage · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="install.html" />
+    <link rel="next" href="usage.html" />
     
+    
+    <link rel="prev" href="install.html" />
     
 
     </head>
@@ -87,7 +89,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -113,7 +115,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="usage.html">
+        <li class="chapter active" data-level="1.3" data-path="usage.html">
             
                 <a href="usage.html">
             
@@ -188,7 +190,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Basics</a>
+        <a href="." >Usage</a>
     </h1>
 </div>
 
@@ -203,26 +205,39 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="mk2slide">mk2slide</h1>
-<p>A simple presentation generator from markdown files</p>
-<h2 id="basic-usage">Basic Usage:</h2>
-<p>To create a simple presentation, you need to create a markdown file with at least the following metadata:</p>
-<pre><code class="lang-yaml"><span class="hljs-meta">---</span>
-<span class="hljs-attr">title:</span> A Presentation Example
-<span class="hljs-attr">width:</span> <span class="hljs-number">800</span>px
-<span class="hljs-attr">height:</span> <span class="hljs-number">600</span>px
-<span class="hljs-meta">---</span>
+                                <h1 id="usage">Usage:</h1>
+<h2 id="create-a-presentation">Create a presentation</h2>
+<p>Create a markdown file like this: (presentation.md)</p>
+<pre><code class="lang-md">---
+title: &quot;My title&quot;
+width: 710px
+<span class="hljs-section">height: 460px
+---</span>
+
+<span class="hljs-section"># First slide</span>
+
+---
+
+<span class="hljs-section">Second slide
+------------</span>
+
+<span class="hljs-bullet">- </span>item 1
+<span class="hljs-bullet">- </span>item 1
+<span class="hljs-bullet">- </span>item 1
+
+
+---
+
+<span class="hljs-section">Conclusion
+----------</span>
+
+this is the conclusion
 </code></pre>
-<p>Then just add your content to your presentation, and to start a new slide insert a line with only <code>---</code>.</p>
-<p>To convert your markdown to HTML just the following comand:</p>
-<pre><code class="lang-sh">mk2slide &lt;presentation.md&gt;
+<h3 id="generate-the-html">Generate the HTML</h3>
+<pre><code class="lang-sh">mk2slide mypresentation.md
 </code></pre>
-<p>A example of a valid slide file is <a href="https://github.com/lucassabreu/mk2slide/blob/master/examples/minimum.md" target="_blank">examples/minimum.md</a>, it will generate this slide: <a href="https://mk2slide.github.io/examples/minimum.html" target="_blank">minimum.html</a>.</p>
-<hr>
-<p><strong>mk2slide</strong> is a open source project that exists by the help of our <a href="https://github.com/lucassabreu/mk2slide/graphs/contributors" target="_blank">contributors</a>, and use of other open source projects.</p>
-<p>If you wanna help us, or just take a look, the source are at: <a href="https://github.com/lucassabreu/mk2slide" target="_blank">https://github.com/lucassabreu/mk2slide</a></p>
-<p>Found a bug &#x1F41B; or request a feature, report here: <a href="https://github.com/lucassabreu/mk2slide/issues/new" target="_blank">https://github.com/lucassabreu/mk2slide/issues/new</a></p>
-<p>Contributions are welcome &#x1F604;.</p>
+<h2 id="pdf">PDF</h2>
+<p><code>mk2slide</code> generate slides that are optimized for PDF generation. To export to pdf you just have to &quot;print&quot; the slides on your browser and save it on PDF format.</p>
 
                                 
                                 </section>
@@ -250,8 +265,12 @@
 
             
                 
+                <a href="install.html" class="navigation navigation-prev " aria-label="Previous page: How to install">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="install.html" class="navigation navigation-next navigation-unique" aria-label="Next page: How to install">
+                
+                <a href="usage.html#create-a-presentation" class="navigation navigation-next " aria-label="Next page: Create a presentation">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -262,7 +281,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Basics","level":"1.1","depth":1,"next":{"title":"How to install","level":"1.2","depth":1,"path":"install.md","ref":"install.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-12-02T17:48:22.666Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-02T18:20:02.174Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Usage","level":"1.3","depth":1,"next":{"title":"Create a presentation","level":"1.3.1","depth":2,"anchor":"#create-a-presentation","path":"usage.md","ref":"usage.md#create-a-presentation","articles":[]},"previous":{"title":"How to install","level":"1.2","depth":1,"path":"install.md","ref":"install.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"usage.md","mtime":"2017-12-02T18:06:37.520Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-12-02T18:20:02.174Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
